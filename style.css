@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #fff;
+  --dark-color: #000;
+  --gray-color: #7a7777;
+  --violet-color: #5d50c6;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--primary-color);
+  color: var(--gray-color);
+  padding: 2rem 165px;
+}
+.container header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--gray-color);
+  margin-right: 64px;
+  font-weight: 700;
+  font-size: 14px;
+}
+nav ul li a.active {
+  color: var(--dark-color);
+}
+.container header .btn-box {
+  text-align: end;
+}
+header .btn-box button {
+  border: 0;
+  outline: 0;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 16px 32px;
+}
+header .btn-box .btn-login {
+  background: transparent;
+}
+header .btn-box .btn-signup {
+  background: var(--violet-color);
+  border-radius: 100px;
+  color: var(--primary-color);
+}
+.container main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin: 82.5px 0;
+}
+main section.hero-left {
+  display: grid;
+  grid-template-rows: 56px 249fr 58px 56px;
+  gap: 43px;
+}
+
+.hero-left h1 {
+  font-size: 69px;
+  font-weight: 700;
+}
+.hero-left h1 span {
+  color: #f85e9f;
+}
+.hero-left p {
+  font-size: 18px;
+  line-height: 160%;
+  /* fill: 191825; */
+}
+.hero-left .btn button {
+  padding: 16px 32px;
+
+  font-size: 14px;
+  font-weight: 700;
+  outline: 0;
+  border: 0;
+  border-radius: 100px;
+  margin-right: 16px;
+}
+.btn #getStarted {
+  background: var(--violet-color);
+  color: #fff;
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.2),
+    0px 20px 50px 0px rgba(0, 0, 0, 0.2);
+}
+.btn #getWatched {
+  background: var(--primary-color);
+  color: var(--dark-color);
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.2),
+    0px 20px 50px 0px rgba(0, 0, 0, 0.2);
+}
+.btn #getWatched i {
+  margin-right: 8px;
+  color: var(--violet-color);
+}
